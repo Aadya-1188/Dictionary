@@ -1,0 +1,21 @@
+# Name: check_frequency
+# Motive: Check the frequency of a value in the given test dictionary
+# Goal: Understand Python dictionaries and operations on them
+
+# Test dictionary
+test_dict = {
+    "codingal": 3,
+    "is": 2,
+    "best": 2,
+    "for": 2,
+    "coding": 1
+}
+
+def check_frequency(value, dictionary):
+    count = list(dictionary.values()).count(value)
+    return count
+
+# Prompt user for input
+user_input = int(input("Which frequency do you want to check? "))
+result = check_frequency(user_input, test_dict)
+print(f"The value {user_input} appears {result} times in the dictionary.")
